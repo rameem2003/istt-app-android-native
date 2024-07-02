@@ -5,6 +5,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from './src/screens/Home';
 import Students from './src/screens/Students';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Info from './src/screens/Info';
 
 const tab = createBottomTabNavigator();
 
@@ -21,6 +22,8 @@ const App = () => {
               iconName = focused ? 'home' : 'home';
             } else if (route.name === 'STUDENT') {
               iconName = focused ? 'users' : 'users';
+            } else if (route.name === 'INFO') {
+              iconName = focused ? 'info-circle' : 'info-circle';
             }
 
             // You can return any component that you like here!
@@ -33,6 +36,7 @@ const App = () => {
         })}>
         <tab.Screen name="HOME" component={Home} />
         <tab.Screen name="STUDENT" component={Students} />
+        <tab.Screen name="INFO" component={Info} />
       </tab.Navigator>
     </NavigationContainer>
   );

@@ -5,7 +5,7 @@ import Title from './Title';
 const StudentDetails = ({route, navigation}) => {
   const {data} = route.params;
 
-  console.log(data);
+  // console.log(data);
   return (
     <View style={{paddingBottom: '20%'}}>
       <Title title={data.studentNameEnglish} />
