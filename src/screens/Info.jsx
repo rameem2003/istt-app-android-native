@@ -8,7 +8,7 @@ const Info = () => {
       <Title title="About App" />
       <View
         style={{
-          flexDirection: 'row',
+          //   flexDirection: 'row',
           alignItems: 'center',
           padding: 2,
           gap: 2,
@@ -20,10 +20,22 @@ const Info = () => {
         />
 
         <View>
-          <Text style={{fontSize: 20, fontWeight: '600', color: 'black'}}>
+          <Text
+            style={{
+              fontSize: 20,
+              fontWeight: '600',
+              color: 'black',
+              textAlign: 'center',
+            }}>
             Institute of Science Trade & Technology
           </Text>
-          <Text style={{fontSize: 20, fontWeight: '600', color: 'black'}}>
+          <Text
+            style={{
+              fontSize: 20,
+              fontWeight: '600',
+              color: 'black',
+              textAlign: 'center',
+            }}>
             Diploma batch 2019 / 20
           </Text>
         </View>
@@ -36,34 +48,60 @@ const Info = () => {
           color: 'black',
           marginTop: 40,
           marginBottom: 20,
+          textAlign: 'center',
         }}>
         App Developer
       </Text>
 
       <View
         style={{
-          flexDirection: 'row',
+          //   flexDirection: 'row',
           alignItems: 'center',
           padding: 2,
           gap: 10,
           width: '100%',
         }}>
         <Image
-          style={{width: 100, height: 100}}
+          style={{width: 200, height: 200}}
           source={require('../assets/images/rameem.jpg')}
         />
 
         <View>
-          <Text style={{fontSize: 23, fontWeight: '800', color: 'black'}}>
+          <Text
+            style={{
+              fontSize: 23,
+              fontWeight: '800',
+              color: 'black',
+              textAlign: 'center',
+            }}>
             Mahmood Hassan Rameem
           </Text>
-          <Text style={{fontSize: 18, fontWeight: '600', color: 'black'}}>
-            Ex Student Diploma batch 2019 / 20
-          </Text>
-          <Text style={{fontSize: 18, fontWeight: '600', color: 'black'}}>
+          <Text
+            style={{
+              fontSize: 18,
+              fontWeight: '600',
+              color: 'black',
+              textAlign: 'center',
+            }}>
             BSc. in CSE Northen University
           </Text>
-          <Text style={{fontSize: 18, fontWeight: '600', color: 'black'}}>
+          <Text
+            style={{
+              fontSize: 18,
+              fontWeight: '600',
+              color: 'black',
+              textAlign: 'center',
+            }}>
+            Ex Student Diploma Batch 2019 / 20
+          </Text>
+
+          <Text
+            style={{
+              fontSize: 18,
+              fontWeight: '600',
+              color: 'black',
+              textAlign: 'center',
+            }}>
             Mail: rameem2019@gmail.com
           </Text>
         </View>
